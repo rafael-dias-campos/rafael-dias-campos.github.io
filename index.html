@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidade de Pixelton & Bitstream</title>
+    <title>Seu Nome - Diretor & Pesquisador</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        /* CSS: A MÁGICA DO ESTILO ACONTECE AQUI */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -25,84 +19,114 @@
             align-items: center;
             min-height: 100vh;
             padding: 20px;
-            /* Fundo gradiente para o efeito de vidro funcionar bem */
-            background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+            /* Um fundo mais bonito e complexo para o vidro se destacar */
+            background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
         }
 
-        /* O CARD DE VIDRO PRINCIPAL */
-        .glass-card {
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px; /* Espaço entre o cartão e o menu */
+        }
+
+        /* O Cartão de Visitas Principal */
+        .profile-card {
             width: 100%;
-            max-width: 800px;
-            
-            /* EFEITO GLASSMORPHISM */
-            background: rgba(255, 255, 255, 0.25); /* Fundo branco translúcido */
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Sombra suave */
-            backdrop-filter: blur(10px); /* O desfoque do fundo, ESSENCIAL */
-            -webkit-backdrop-filter: blur(10px); /* Para funcionar no Safari */
-            border-radius: 15px; /* Bordas arredondadas */
-            border: 1px solid rgba(255, 255, 255, 0.18); /* Borda sutil */
-            
-            padding: 30px;
-            color: #1a1a1a; /* Cor do texto escura para bom contraste */
+            max-width: 500px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+
+            /* EFEITO GLASSMORPHISM APRIMORADO */
+            background: rgba(255, 255, 255, 0.1); /* Mais transparente */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(15px); /* Mais desfoque */
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 20px;
+            /* Coloque o link para sua foto aqui */
+            object-fit: cover;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 600;
-            text-align: center;
-            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5rem; /* Aumenta o tamanho dos links/ícones */
+        }
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* O Menu de Navegação */
+        .nav-card {
+            display: flex;
+            gap: 20px;
+            padding: 20px 40px;
+            
+            /* Aplicando o mesmo efeito no menu */
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .slogan {
-            text-align: center;
-            font-style: italic;
-            margin-bottom: 30px;
-            opacity: 0.8;
+        .nav-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 400;
+            transition: transform 0.2s;
         }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 20px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        strong {
-            font-weight: 600;
+        .nav-card a:hover {
+            transform: scale(1.1);
         }
 
     </style>
 </head>
 <body>
+    <div class="main-container">
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/150" alt="Sua Foto" class="profile-pic">
+            
+            <h1>Seu Nome Completo</h1>
+            <p class="title">Diretor na Editora XYZ & Pesquisador PPG</p>
 
-    <div class="glass-card">
-        <h1>Universidade de Pixelton & Bitstream (UPB)</h1>
-        <p class="slogan">"Onde o Conhecimento Transcende a Resolução"</p>
-        
-        <h2>Reitor</h2>
-        <p><strong>Nome:</strong> Dr. Phileas Fogg-pixel</p>
-        <p><strong>Citação Favorita:</strong> "A clareza da tela reflete a profundidade do pensamento."</p>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Lattes</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
 
-        <h2>Programas Acadêmicos em Destaque</h2>
-        
-        <h3>Doutorado em Semântica Visual Generativa</h3>
-        <p>Explora a criação de significado através de interfaces visuais transparentes e a arquitetura de prompts neuronais.</p>
-        <p><strong>Foco:</strong> Glassmorphism Avançado, UX Transparente, AI-Generated Aesthetics.</p>
-        
-        <h3>Mestrado em Estética de Interfaces Holográficas</h3>
-        <p>Estudo aprofundado na percepção e interação com elementos visuais etéreos e translúcidos em ambientes 3D.</p>
-        <p><strong>Foco:</strong> Renderização Volumétrica, Psicologia da Transparência, Shader Programming.</p>
-        
-        <h2>Contato</h2>
-        <p><strong>Email:</strong> reitoria@upb.github.io</p>
-        <p><strong>Telefone:</strong> +1 (555) GLASS-M0RPH</p>
+        <div class="nav-card">
+            <a href="ppg.html">Dashboard PPG</a>
+            <a href="editora.html">Dashboard Editora</a>
+        </div>
     </div>
-
 </body>
 </html>
