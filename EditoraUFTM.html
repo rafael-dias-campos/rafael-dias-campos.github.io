@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora UFTM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .dashboard-card {
+            width: 100%;
+            max-width: 1200px;
+            height: 75vh; 
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        .back-link:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Editora UFTM</h1>
+
+        <div class="dashboard-card">
+            <iframe title="EdUFTM em Numeros" src="https://app.powerbi.com/view?r=eyJrIjoiZmU0N2YwMGItZjJjZC00NzRmLThhNjQtNDZkMjcxM2MwYTY1IiwidCI6IjY3ZTU5MmYxLTk2ODEtNDI5YS1iYWE5LTk1MDhmZGZkNzc4MCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <a href="index.html" class="back-link">Voltar para a Página Inicial</a>
+    </div>
+</body>
+</html>
