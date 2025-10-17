@@ -7,6 +7,13 @@
     box-sizing: border-box; 
 }
 
+/* Sobrescreve o estilo do body apenas para a página inicial */
+body.index-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Estilo do body padrão - ajustado para o layout centralizado da página inicial */
 body {
     font-family: 'Poppins', sans-serif;
