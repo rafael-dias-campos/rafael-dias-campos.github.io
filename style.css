@@ -1,5 +1,5 @@
 /* ============================================== */
-/* ESTILOS GERAIS (Para todas as páginas) */
+/* ESTILOS GERAIS PARA TODO O SITE */
 /* ============================================== */
 * { 
     margin: 0; 
@@ -7,26 +7,30 @@
     box-sizing: border-box; 
 }
 
+/* Estilo do body padrão - ajustado para o layout centralizado da página inicial */
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px; /* Padding geral para evitar que o conteúdo encoste nas bordas */
 }
 
 /* ============================================== */
-/* ESTILOS DA PÁGINA INICIAL (index.html) */
+/* ESTILOS ESPECÍFICOS DA PÁGINA INICIAL (index.html) */
 /* ============================================== */
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 30px; /* Espaço entre o cartão e o menu */
+    
+    /* Centraliza o conteúdo da página inicial vertical e horizontalmente */
+    flex-grow: 1; /* Permite que o container ocupe o espaço disponível */
+    display: flex; /* Garante que os itens dentro dele sejam flex */
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-card {
@@ -52,7 +56,7 @@ body {
     object-fit: cover;
 }
 
-.profile-card h1 {
+.profile-card h1 { /* Para evitar conflito com o h1 das subpáginas */
     font-size: 2rem;
     font-weight: 600;
 }
@@ -97,16 +101,18 @@ body {
 }
 
 /* ============================================== */
-/* ESTILOS DAS SUBPÁGINAS (Dashboards) */
+/* ESTILOS ESPECÍFICOS DAS SUBPÁGINAS (Dashboards) */
 /* ============================================== */
 .subpage-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%; /* Permite que o container ocupe a largura total */
 }
 
-.subpage-container h1 {
+/* Estilo do h1 nas subpáginas */
+.subpage-container h1 { /* Mais específico para evitar conflito com h1 do profile-card */
     color: white;
     font-size: 2.5rem;
     font-weight: 600;
@@ -154,7 +160,3 @@ iframe {
 .back-link:hover {
     background: rgba(0, 0, 0, 0.6);
 }
-
-/* Nota: Tive que renomear o container das subpáginas para .subpage-container 
-   para evitar conflito com o .main-container da página inicial. 
-   Precisaremos fazer um pequeno ajuste no HTML das subpáginas. */
