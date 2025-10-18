@@ -1,10 +1,10 @@
 /* ============================================== */
 /* ESTILOS GERAIS (Para todas as páginas) */
 /* ============================================== */
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -71,6 +71,7 @@ body {
     margin: 0 10px;
     font-size: 1.5rem;
 }
+
 .social-links a:hover {
     opacity: 0.7;
 }
@@ -80,9 +81,14 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 300;
+    display: inline-block;
+    transition: transform 0.2s;
+
 }
+
 .link-main:hover {
     opacity: 0.7;
+    transform: scale(1.02);
 }
 
 .nav-card {
@@ -104,6 +110,7 @@ body {
     font-weight: 400;
     transition: transform 0.2s;
 }
+
 .nav-card a:hover {
     transform: scale(1.1);
 }
@@ -139,7 +146,7 @@ body {
 .dashboard-card {
     width: 100%;
     max-width: 800px;
-    height: 75vh; 
+    height: 75vh;
     padding: 20px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -164,6 +171,7 @@ iframe {
     border-radius: 10px;
     transition: background 0.3s;
 }
+
 .back-link:hover {
     background: rgba(0, 0, 0, 0.6);
 }
