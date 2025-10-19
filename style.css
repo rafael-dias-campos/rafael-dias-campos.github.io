@@ -10,7 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop');
+    background-image: url('/assets/background.webp');
     background-size: cover;
     background-position: center;
     padding: 20px;
